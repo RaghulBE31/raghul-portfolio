@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghul S - Portfolio</title>
+
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Raghul S</h1>
+        <h3>ECE Graduate | Java Backend Developer</h3>
+
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#internship">Internship</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am an Electronics and Communication Engineering graduate
+                passionate about software development. I enjoy building
+                applications and solving real-world problems using Java
+                and Spring Boot.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>C and C++</li>
+                <li>HTML and CSS</li>
+                <li>JavaScript</li>
+                <li>Spring Boot</li>
+                <li>REST APIs</li>
+                <li>PostgreSQL</li>
+                <li>Git and GitHub</li>
+                <li>Docker</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <article class="project-card">
+                <h3>1. Verilog Practice Platform</h3>
+                <p>
+                    Developed a web-based platform for practising Verilog HDL
+                    problems using Java, Spring Boot, React, and MongoDB.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h3>2. LiveQueue – Real-Time Queue Management</h3>
+                <p>
+                    Developing a queue management system that helps manage
+                    appointments, patient tokens, and real-time queue updates.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h3>3. AI-Based Wi-Fi Contention Window Adaptation</h3>
+                <p>
+                    Worked on an adaptive Wi-Fi contention window approach
+                    using Fitted Q-Learning, NS-3, and Raspberry Pi.
+                </p>
+            </article>
+
+            <h3>Add a New Project</h3>
+
+            <form id="projectForm">
+                <label for="projectName">Project Name</label>
+                <input
+                    type="text"
+                    id="projectName"
+                    placeholder="Enter project name"
+                    minlength="3"
+                    maxlength="100"
+                    required
+                >
+
+                <label for="projectDescription">Project Description</label>
+                <textarea
+                    id="projectDescription"
+                    placeholder="Describe your project"
+                    minlength="10"
+                    maxlength="1000"
+                    required
+                ></textarea>
+
+                <button type="submit">Add Project</button>
+
+                <p id="projectStatus" class="status" role="status"></p>
+            </form>
+
+            <div id="newProjects"></div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+
+            <h3>B.E. in Electronics and Communication Engineering</h3>
+            <p>PSG Institute of Technology and Applied Research, Coimbatore</p>
+            <p>Graduation Year: 2026</p>
+        </section>
+
+        <section id="internship">
+            <h2>Internship Experience</h2>
+
+            <h3>IoT Research Intern – Assured AI</h3>
+            <p>
+                Worked on a low-cost RF-PUF wireless node for human
+                authentication and AI-based forest fire forecasting.
+            </p>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Smart India Hackathon Finalist</li>
+                <li>Inventee Hackathon Finalist</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <p>
+                Email:
+                <a href="mailto:s.raghul3001@gmail.com">
+                    s.raghul3001@gmail.com
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a
+                    href="https://www.linkedin.com/in/raghulsd/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Visit My LinkedIn
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a
+                    href="https://github.com/RaghulBE31"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Visit My GitHub
+                </a>
+            </p>
+
+            <h3>Send Me a Message</h3>
+
+            <form id="contactForm">
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    minlength="2"
+                    maxlength="100"
+                    required
+                >
+
+                <label for="email">Your Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    maxlength="254"
+                    required
+                >
+
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    placeholder="Enter your message"
+                    minlength="10"
+                    maxlength="2000"
+                    required
+                ></textarea>
+
+                <button type="submit">Submit</button>
+
+                <p id="formStatus" class="status" role="status"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#about">Back to Top ↑</a>
+    </footer>
+
+        <script src="script.js" defer></script>
+</body>
+</html>
